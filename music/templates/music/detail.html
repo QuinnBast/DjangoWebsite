@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>{{ album.title }} by {{ album.artist }}</h2>
+{% if songs %}
+<ul>
+    {% for song in songs %}
+            <li>{{ song.title }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+    <h4>No songs found!</h4>
+{% endif %}
+</body>
+</html>
